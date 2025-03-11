@@ -1,0 +1,158 @@
+p{
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .topico{
+    margin-left: 50px;
+}
+
+
+header h2{
+    margin:0;
+    font-family: "Russo One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    margin: 0;
+}
+
+.topico{
+    position: relative;
+    color: rgb(0, 0, 107);
+}
+
+.topico p{
+    margin: 0;
+    cursor: pointer;
+}
+
+.temas {
+    display: none;
+    position: absolute;
+    background-color:rgb(217, 216, 213);
+    border-radius: 5px;
+    height:180px;
+    padding-bottom: 200px;
+}
+
+.temass {
+    display: none;
+    position: absolute;
+    background-color:rgb(217, 216, 213);
+    border-radius: 5px;
+    height:180px;
+    padding-bottom: 80px;
+}
+
+.temass a {
+    display: block;
+    color: rgb(0, 0, 107);
+    padding: 5px;
+    text-decoration:none;
+    margin-top: 10px;
+    width: 180px;
+}
+.temass a:hover {
+    color: rgb(104, 104, 104);
+}
+.topico:hover .temass {
+    display: block;
+}
+
+.temas a {
+    display: block;
+    color: rgb(0, 0, 107);
+    padding: 5px;
+    text-decoration:none;
+    margin-top: 10px;
+    width: 180px;
+}
+.temas a:hover {
+    color: rgb(104, 104, 104);
+}
+.topico:hover .temas {
+    display: block;
+}
+
+h1{
+    text-align: center;
+    font-family: "Russo One", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+img{
+    border-radius: 20px;
+    width: 400px;
+    height: 260px;
+    text-align: center;
+}
+
+.imagem{
+    text-align: center;
+}
+
+#formula{
+    font-size: 30px; /* Ajusta o tamanho da fórmula */
+    color: #000000; /* Altera a cor da fórmula (neste caso, um tom de laranja) */
+    text-align: center;
+}
+.Formulas{
+    font-size: 30px; 
+    text-align: center;
+}
+
+.DescricaoFormulas{
+    margin-top:50px;
+    margin-left: 50px;
+    background-color: rgb(27, 27, 114);
+    color: aliceblue;
+    border-radius: 10px;
+    width: 255px;
+    text-align: center;
+    margin-left: 313px;
+    margin: auto;
+}
+
+.content-wrapper {
+    display: flex; /* Usamos flexbox para organizar os elementos lado a lado */
+    justify-content: space-between; /* Adiciona espaço entre o main e o aside */
+    padding: 20px; /* Para adicionar um pouco de espaço ao redor do conteúdo */
+}
+
+.scene {
+    display: block;  /* Faz cada flashcard ficar um abaixo do outro */
+    width: 260px;    /* Define a largura dos flashcards */
+    height: 200px;   /* Define a altura dos flashcards */
+    margin: 20px auto; /* Centraliza os flashcards */
+    perspective: 600px;
+}
+.page{
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    height: 100vh; /* Faz com que o corpo ocupe 100% da altura da janela */
+    color: #333; /* Cor do texto para garantir boa legibilidade */
+}
+
+.paginauni {
+    text-align: center; /* Centraliza o texto */
+    background-color: #c9d9ee; /* Cor de fundo */
+    border-radius: 50px; 
+    height: 50%;
+    width: 50%;
+    margin-left: 400px;
+    margin-top: 200px;
+    
+}

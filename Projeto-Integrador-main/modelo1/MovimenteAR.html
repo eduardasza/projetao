@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto integrador</title>
+    <link rel="stylesheet" href="externo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Russo+One&family=Syncopate:wght@400;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css">
+    
+</head>
+<body>
+<header>
+    <div style="display: flex; align-items: center;">
+        <img src="logo2.png" alt="" class="logo" style="margin-right: -15px;">
+        <h2>Rastro da Física</h2>
+    </div>
+    
+    <div style="display: flex; align-items: center; gap: 100px">
+        <div class="topico">
+            <p>Ementa</p>
+            <div class="temas">
+                <a href="ConceitosBasicos.html">Conceitos Básicos</a>
+                <a href="Movimentos.html">Movimentos Uniformes</a>
+                <a href="QuedaLivre.html">Queda Livre</a>
+                <a href="MovimenteAR.html">Movimente acelerado/retardado</a>
+            </div>
+        </div>
+        <div class="topico">
+            <p><a href="Exercicios.html">exercícios</a></p>
+        </div>
+        <div class="topico">
+            <p>Sobre Nós</p>
+            <div class="temass" style="height: 130px;">
+                <a href="Objetivo.html">Obejtivo Do Site</a>
+                <a href="PI.html">Projeto Integrador</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="content-wrapper">
+<main style="width:75%;">
+    <h1 >Cinemática: física - Movimento
+        uniformemente variado </h1>
+    <div class="MovimentoAR" style="width:70%; margin:auto">
+        <p>Quando um ciclista desce uma ladeira, seu movimento ocorre com velocidade variável – seja em trechos curvos, seja em partes retilíneas. A diferença é que, nos trechos retilíneos, a aceleração do ciclista permanece constante, pois a inclinação da ladeira não muda. Esse é um exemplo de movimento uniformemente variado, em que a velocidade aumenta de forma regular devido à ação da força gravitacional.</p>
+        <h2>Movimentos com velocidade escalar variável</h2>
+            <p>Os movimentos são classificados em movimentos uniformes, que possuem velocidade escalar constante, e movimentos variados, cuja velocidade escalar varia com o tempo. Os movimentos de velocidade escalar variável são os mais comuns. Em geral, uma pessoa andando, um carro se deslocando etc. têm velocidades escalares variáveis no tempo. No movimento uniforme, a velocidade escalar média calculada em qualquer intervalo de tempo é sempre a mesma, e igual à velocidade escalar em qualquer instante. Esse fato não ocorre no movimento variado.
+            </p>
+           
+                <h2>Aceleração escalar</h2>
+                <p>Num movimento variado, seja V1 a velocidade escalar do móvel no instante T1, e V2 a velocidade escalar no instante posterior T2. Seja \( \Delta v = v_2 - v_1 \) a variação da velocidade no intervalo de tempo St. Observe que a aceleração escalar média é a grandeza que indica quanto varia a velocidade escalar num dado intervalo de tempo. . A aceleração escalar média am no intervalo de tempo \( \Delta t \) é, por definição: 
+                </p>
+
+                <div id="formula"></div>
+                <script src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+
+                <script>
+                const formula4 ="a_{\\text{média}} = \\frac{\\Delta v}{\\Delta t}";
+                const element4 = document.getElementById('formula');
+                katex.render(formula4, element4);
+                </script><br>
+
+                <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+                <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+                    onload="renderMathInElement(document.body);"></script>
+
+                <p>Se a variação da velocidade \( \Delta v \) estiver em m/s (metros por segundo) e o intervalo de tempo \( \Delta t \) estiver em s (segundos), a aceleração \( \frac{\Delta v}{\Delta t} \) será medida em \( \frac{m}{s} \) (metros por segundo por segundo), que se indica por \( m/s^2 \) (metros por segundo ao quadrado). De modo geral, a unidade de aceleração é o quociente da unidade de velocidade pela unidade de tempo: \( \frac{km/h}{s} \),\( \frac{cm/s}{s} \) ,\( \frac{m/s}{s} \),\( \frac{km/h}{min} \) , \( \frac{km/h}{h} \) etc.
+                </p>
+                <p>A aceleração escalar pode ser positiva ou negativa, conforme \( \Delta v \) seja positivo ou negativo, já que \( \Delta t \) é positivo. No movimento uniforme a velocidade escalar é constante e a aceleração escalar é <strong>nula.</strong> Quando a aceleração escalar instantânea é a mesma em todos os instantes,<strong>ela coincide com a aceleração escalar média em qualquer intervalo de tempo. </strong> 
+                </p>
+
+                <h2>Função horária da velocidade</h2>
+                <p>Nos movimentos variados, além de o espaço s variar no decurso do tempo, também a velocidade escalar é uma função do tempo. A velocidade escalar pode ser apresentada como função do tempo por meio de tabelas ou de funções matemáticas. A função que relaciona a velocidade escalar <strong>V</strong> em função do tempo <strong>T</strong> é chamada função horária da velocidade.</p>
+
+        <h2>Movimento acelerado e movimento retardado</h2>
+        <p>Em Cinemática, de acordo com a orientação da trajetória, a velocidade escalar pode ser positiva ou negativa. Assim, ao nos referirmos a acelerado ou retardado, devemos trabalhar com o módulo da velocidade escalar. Quando aceleramos ou retardamos um veículo, estamos aumentando ou diminuindo o módulo da velocidade escalar.</p> <br>
+        <p>O sinal da aceleração escalar depende do sinal da variação da velocidade (\( \Delta v \)) e, de acordo com a orientação da trajetória, o movimento acelerado pode ser progressivo (a favor da orientação da trajetória) ou retrógrado (contra a orientação da trajetória). O mesmo ocorre no movimento retardado</p>
+        <div style="display: flex;">
+            <img src="MOvimentoAcelerado.png" alt="">
+            <img src="MovimentoRetardado.png" alt="">
+        </div> <br>
+       <p>
+        Movimentos que possuem aceleração escalar instantânea constante (e não nula) são chamados movimentos uniformemente variados. Decorre imediatamente que, se a aceleração escalar é a mesma em todos os instantes.
+       </p> 
+       <p>
+        Assim, no movimento uniformemente variado, a variação da velocidade Sv é diretamente proporcio nal ao intervalo de tempo St correspondente. Essa proporcionalidade significa que, no movimento uniformemente variado, a velocidade escalar apresenta variações iguais em intervalos de tempo iguais. 
+       </p>
+        <h2>Função horária da velocidade no MUV</h2>
+        <div style="text-align: center;">
+            <p class="Formulas">\( v = v_0 + a t \)</p>
+            <div class="DescricaoFormulas">
+                <p><strong>V=</strong> velocidade final</p>
+                <p><strong>V0=</strong> velocidade inicial</p>
+                <p><strong>A=</strong> aceleração</p>
+                <p> <strong>T=</strong> tempo</p>
+            </div>
+        </div>
+        <h2>Função horária da espaço no MUV</h2>
+        <p class="Formulas">\( s = s_0 + v_0 t + \frac{1}{2} a t^2 \)</p>
+        <div class="DescricaoFormulas">
+            <p><strong>S=</strong> posição final (m)</p>
+            <p><strong>S0=</strong> posição inicial (m)</p>
+            <p><strong>V0=</strong> velocidade inicial (m/s)</p>
+            <p><strong>A=</strong> aceleração (\( m/s^2 \)) </p>
+            <p> <strong>T=</strong> tempo (s)</p>
+        </div>
+        <h2>Velocidade escalar média no MUV</h2>
+        <p>No movimento uniformemente variado(MUV), a velocidade escalar media, num intervalo de tempo, é a média aritmética das velocidades escalares nos instantes que define o intervalo:</p>
+        <p class="Formulas">\( V_m = \frac{(v_1 + v_2)}{2} \)</p>
+        <div class="DescricaoFormulas">
+            <p><strong>V1=</strong>T1</p>
+            <p><strong>V2=</strong>T2</p>
+        </div> <br>
+
+        <h2>Equação de Torricelli para o MUV</h2>
+        <p>No MUV há muitos casos nos quais interessa relacionar a velocidade escalar v em função do espaço s, o que é feito com o emprego da chamada equação de Torricelli, que deduzimos a seguir.
+        </p>
+        <p class="Formulas"> \( v^2 = v_0^2 + 2a \cdot \Delta s \)</p>
+        <div class="DescricaoFormulas">
+            <p><strong>V=</strong> velocidade final(m/s)</p>
+            <p><strong>V0=</strong> velocidade inicial(m/s)</p>
+            <p><strong>A=</strong>aceleração(\( m/s^2 \))</p>
+            <p><strong>S=</strong>deslocamento</p>
+        </div>
+
+        <div class="exercicios">
+            <h2>Exercícios</h2>
+            <div class="exercicio 1">
+                <p>
+                    <strong>1.(PUC-RS)</strong> Dizer que um movimento se realiza com
+                    uma aceleração escalar constante de 5 m/s² significa que:<br>
+                    A) em cada segundo o móvel se desloca 5 m.<br>
+                    B) em cada segundo a velocidade do móvel aumenta de 5 m/s.<br>
+                    C) em cada segundo a aceleração do móvel aumenta de 5 m/s. <br>
+                    D) em cada 5 s a velocidade aumenta de 1 m/s. <br>
+                    E) a velocidade é constante e igual a 5 m/s. <br>
+                </p>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                        Ver resposta
+                        </a>
+                    </p>
+                    
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            <strong>B) Em cada segundo a velocidade do móvel aumenta de 5 m/s.</strong> <br> Se a aceleração escalar é constante e igual a 5 m/s², isso significa que a velocidade do móvel aumenta 5 m/s a cada segundo. <br>
+
+                            Agora, vamos analisar as alternativas: <br>
+                            A) <strong>ERRADA</strong> Em cada segundo o móvel se desloca 5 m.
+                            Errado. O deslocamento depende da velocidade inicial e do tempo, não apenas da aceleração.
+                            B) <strong>CORRETA</strong> Em cada segundo a velocidade do móvel aumenta de 5 m/s. <br>
+                            Correto! A aceleração de 5 m/s² indica um aumento de 5 m/s na velocidade a cada segundo. <br>
+                            C) <strong>ERRADA</strong> Em cada segundo a aceleração do móvel aumenta de 5 m/s². <br>
+                            Errado. A aceleração é constante, então não aumenta com o tempo. <br>
+                            D) <strong>ERRADA</strong> Em cada 5 s a velocidade aumenta de 1 m/s. <br>
+                            Errado. O aumento seria 5×5=25 m/s em 5 segundos, e não 1 m/s. <br>
+                            E) <strong>ERRADA</strong> A velocidade é constante e igual a 5 m/s. <br>
+                            Errado. Se há aceleração, a velocidade não pode ser constante. <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercicio 2">
+                <p>
+                    <strong>2.(Unirio-RJ)</strong> Caçador nato, o guepardo é uma espécie de mamífero que reforça a tese de que os animais predadores estão entre os bichos mais velozes da
+                    natureza. Afinal, a velocidade é essencial para os que
+                    caçam outras espécies em busca de alimentação.<br>
+                    <img src="onça.png" alt=""> <br>
+                    O guepardo é capaz de, saindo do repouso e correndo em linha reta, chegar à velocidade de 72 km/h em
+                    apenas 2,0 segundos, o que nos permite concluir, em tal situação, ser o módulo de sua aceleração escalar média, em m/s²
+                    , igual a:
+                    A) 10<br>
+                    B) 15<br>
+                    C) 18 <br>
+                    D) 36 <br>
+                    E) 50 <br>
+                </p>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                        Ver resposta
+                        </a>
+                    </p>
+                    
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body"> <strong>A)10</strong>
+                            Podemos calcular a aceleração escalar média usando a fórmula: <br>𝑎=Δ𝑣/Δ𝑡 <br> Converter a velocidade para m/s
+                            A velocidade final do guepardo é 72 km/h. Para converter para m/s, usamos: <br>
+                            
+                            1km/h = 1/3,6 m/s <br>
+                            72 km/ = 72/3,6 = 20m/s <br> fórmula da aceleração <br>
+                            a= 20−0/2 = 20/2 = 10 m/s​
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercicio 3">
+                <p>
+                    <strong>3.(UEL-PR)</strong> (UEL-PR) Um móvel efetua um movimento retilíneo uniformemente variado obedecendo à função horária <strong>S= 5+10t-5,t²</strong>, na qual o espaço S é medido em metros e o instante t em segundos. A velocidade do móvel no instante t= 4,0 s, em m/s, vale:<br>
+                    A) 50<br>
+                    B) 20<br>
+                    C) 0 <br>
+                    D) -20 <br>
+                    E) -30 <br>
+                </p>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                        Ver resposta
+                        </a>
+                    </p>
+                    
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                            <strong>E) - 30</strong> A equação horária do movimento é dada por: <br> v(t) = 10+10t-5taoquadrado <br> Para calcular a velocidade no instante 𝑡=4,0 devemos derivar a função do espaço em relação ao tempo, pois a velocidade é a derivada do espaço: <br> v(t) = ds(t)/dt <br> Agora, substituímos 𝑡=4,0 na expressão para encontrar a velocidade: v(4) = 10-10(4) <br>
+                            v(4) = 10 - 40 <br>
+                            v(4) = -30m/s
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercicio 4">
+                <p>
+                    <strong>4.(Olimpíada Paulista de Física)</strong>Um avião a jato, par-
+                    tindo do repouso, é submetido a uma aceleração constante de 4,0 m/s². Qual é o intervalo de tempo \( \Delta t\)
+                    de aplicação dessa aceleração para que o jato
+                    atinja a velocidade de decolagem de 160 m/s? Qual é a distância d percorrida até a decolagem?<br>
+                    A) \( \Delta t\)= 80,0 s e d= 400 m <br>
+                    B) \( \Delta t\)= 20,0 s e d= 1.600 m <br>
+                    C) \( \Delta t\)= 20,0 s e d= 3.200 m <br>
+                    D) \( \Delta t\)= 40,0 s e d= 1.600 m <br>
+                    E) \( \Delta t\)= 40,0 s e d= 3.200 m <br>
+                </p>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                        Ver resposta
+                        </a>
+                    </p>
+                    
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                            <strong>E) \( \Delta t\)= 40,0 s e d= 3.200 m</strong> Como o avião parte do repouso, significa que sua velocidade inicial é igual a zero. <br> órmula da função horária da velocidade para achar o tempo: <br> V = Vo + a.t <br> 160 = 0 + 4.t <br>
+                            160/4 = t <br>
+                            t = 40s <br>
+                            Distância: <br>
+                            Fórmula do MUV: \( s = s_0 + v_0 t + \frac{1}{2} a t^2 \) <br>
+                            \( s = \frac{1}{2} \cdot 4,0 \cdot (40)^2 \)
+                            \( s = 2,0 \cdot 1600 \)
+                            \( s = 3200 \text{ m} \)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercicio 5">
+                <p>
+                    <strong>5.(PUC-Campinas-SP)</strong>No instante em que a luz verde
+                    do semáforo acende, um carro ali parado parte com aceleração constante de 2,0 m/s². Um caminhão, que circula na mesma direção e no mesmo sentido, com velocidade constante de 10 m/s, passa por ele no exato momento da partida. Podemos, considerando os dados numéricos fornecidos, afirmar que:<br>
+                    A) o carro ultrapassa o caminhão a 200 m do semáforo. <br>
+                    B) o carro não alcança o caminhão. <br>
+                    C) os dois veículos seguem juntos. <br>
+                    D) o carro ultrapassa o caminhão a 40 m do semáforo. <br>
+                    E) o carro ultrapassa o caminhão a 100 m do semáforo. <br>
+                </p>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                        Ver resposta
+                        </a>
+                    </p>
+                    
+                    <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                            <strong>A) o carro ultrapassa o caminhão a 200 m do semáforo.</strong> Resolvendo a equação: <br> taoquadrado - 10t = 0 <br>
+                            t(t-10) = 0 <br> logo,𝑡=0 (no momento da partida, o que não nos interessa)t=10 segundos. <br> Distância percorrida até o momento em que o carro ultrapassa o caminhão: <br> Substituindo 𝑡=10 na equação do movimento do carro: <br>
+                            𝑠carro=(10aoquadrado)=100m <br>
+                            Portanto, o carro ultrapassa o caminhão a 100 metros do semáforo. <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<aside>
+    <p><a href="">Flash-cards</a> para memorização de fórmulas para os exercícios.</p>
+    <div class="scene scene--card" style=" width: 260px; height: 200px; margin: 40px 0; perspective: 600px;">
+        <div class="card" style="position: relative; width: 100%; height: 100%; cursor: pointer; transform-style: preserve-3d; transition: transform 1s;">
+            <div class="card__face card__face--front" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 30px; backface-visibility: hidden; background: rgb(27, 27, 114);">
+                <p style="margin-top: -30px;">Aceleração</p>
+            </div>
+            <div class="card__face card__face--back" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 30px; backface-visibility: hidden; background: rgb(27, 27, 114); transform: rotateY(180deg);">
+                <p style="margin-top: -30px;">\( a = \frac{\Delta v}{\Delta t} \)
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="scene scene--card" style="width: 260px; height: 200px; margin: 40px 0; perspective: 600px;">
+        <div class="card" style="position: relative; width: 100%; height: 100%; cursor: pointer; transform-style: preserve-3d; transition: transform 1s;">
+            <div class="card__face card__face--front" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 19px; backface-visibility: hidden; background: rgb(27, 27, 114);">
+                <p style="margin-top: -30px;">Função Horária da velocidade </p>
+            </div>
+            <div class="card__face card__face--back" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 20px; backface-visibility: hidden; background: rgb(27, 27, 114); transform: rotateY(180deg);">
+            <p style="margin-top: -30px;">\( v = v_0 + a t \)
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="scene scene--card" style="width: 260px; height: 200px; margin: 40px 0; perspective: 600px;">
+        <div class="card" style="position: relative; width: 100%; height: 100%; cursor: pointer; transform-style: preserve-3d; transition: transform 1s;">
+            <div class="card__face card__face--front" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 21px; backface-visibility: hidden; background: rgb(27, 27, 114);">
+                <p style="margin-top: -30px;">Função Horária do espaço </p>
+            </div>
+            <div class="card__face card__face--back" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 20px; backface-visibility: hidden; background: rgb(27, 27, 114); transform: rotateY(180deg);">
+            <p style="margin-top: -30px;">\( s = s_0 + v_0 t + \frac{1}{2} a t^2 \)
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="scene scene--card" style="width: 260px; height: 200px; margin: 40px 0; perspective: 600px;">
+        <div class="card" style="position: relative; width: 100%; height: 100%; cursor: pointer; transform-style: preserve-3d; transition: transform 1s;">
+            <div class="card__face card__face--front" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 22px; backface-visibility: hidden; background: rgb(27, 27, 114);">
+                <p style="margin-top: -30px;">Velocidade Média no MUV </p>
+            </div>
+            <div class="card__face card__face--back" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 20px; backface-visibility: hidden; background: rgb(27, 27, 114); transform: rotateY(180deg);">
+            <p style="margin-top: -30px;">\( v_m = \frac{v1 + v2}{2} \)
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="scene scene--card" style="width: 260px; height: 200px; margin: 40px 0; perspective: 600px;">
+        <div class="card" style="position: relative; width: 100%; height: 100%; cursor: pointer; transform-style: preserve-3d; transition: transform 1s;">
+            <div class="card__face card__face--front" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 27px; backface-visibility: hidden; background: rgb(27, 27, 114);">
+                <p style="margin-top: -30px;">Equação de Torricelli </p>
+            </div>
+            <div class="card__face card__face--back" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 20px; backface-visibility: hidden; background: rgb(27, 27, 114); transform: rotateY(180deg);">
+            <p style="margin-top: -30px;">\( s = s_0 + v_0 t + \frac{1}{2} a t^2 \)
+            </p>
+            </div>
+        </div>
+    </div>
+</aside>
+</div>
+
+<script>
+// Script para alternar a classe 'is-flipped' nos cartões
+var cards = document.querySelectorAll('.card');
+
+[...cards].forEach((card) => {
+    card.addEventListener('click', function() {
+        // Adiciona e remove a rotação do cartão
+        card.style.transform = card.style.transform === 'rotateY(180deg)' ? '' : 'rotateY(180deg)';
+    });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<aside>
+    
+</aside>
+</body>
+</html>

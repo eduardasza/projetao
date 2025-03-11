@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto integrador</title>
+    <link rel="stylesheet" href="externo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Russo+One&family=Syncopate:wght@400;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css">
+</head>
+<body>
+<header>
+    <div style="display: flex; align-items: center;">
+        <img src="logo2.png" alt="" class="logo" style="margin-right: -15px;">
+        <h2>Rastro da Física</h2>
+    </div>
+    
+    <div style="display: flex; align-items: center;gap: 100px">
+        <div class="topico">
+            <p>Ementa</p>
+            <div class="temas">
+                <a href="ConceitosBasicos.html">Conceitos Básicos</a>
+                <a href="Movimentos.html">Movimentos Uniformes</a>
+                <a href="QuedaLivre.html">Queda Livre</a>
+                <a href="MovimenteAR.html">Movimente acelerado/retardado</a>
+            </div>
+        </div>
+        <div class="topico">
+            <p><a href="Exercicios.html">exercícios</a></p>
+        </div>
+        <div class="topico">
+            <p>Sobre Nós</p>
+            <div class="temass" style="height: 130px;">
+                <a href="Objetivo.html">Obejtivo Do Site</a>
+                <a href="PI.html">Projeto Integrador</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="content-wrapper">
+    <main style="width:75%;">
+    <h1 >Cinemática: física - Principais conceitos</h1> <br>
+        <div style="width:70%; margin:auto">
+        <p>Esse site é especialmente para aqueles estudantes que tem como foco estudar para o enem de uma forma simples e didática com os principais conceitos de Cinemática e muitos exercícios para praticar. </p>
+        <p>A <strong>Cinemática</strong> é a parte da Física que descreve os movimentos,
+        procurando determinar a <strong>posição, a velocidade e a aceleração</strong>  de um
+        corpo em cada instante.</p> <br>
+        <h2>Posição</h2>
+        <p>A primeira etapa em Cinemática é a determinação, em cada instante,da posição de um móvel. <br> Por exemplo, se o ônibus tiver partido de uma localidade no km 60 (fig. 2) e se
+        deslocado até o km 90, terá andado nesse intervalo de tempo 30 km, diferente portanto de 90 km</p>
+        <div style="text-align: center;"><img src="onibus.png" alt=""></div> <br>
+        <h2>Referencial</h2>
+        <p>Um corpo está em movimento quando sua posição muda no decurso do tempo. O corpo em relação ao qual identificamos se um móvel está em movimento ou em repouso é chamado referencial ou sistema de referência
+        </p>
+        <div style="display: flex;">
+            <div style="margin-right: 60px;">
+                <img src="Referencial.png" alt="">
+                <p>Os conceitos de repouso e de movimento dependem do referencial adotado.</p>
+            </div>
+
+            <div>
+                <img src="referencialpt2.png" alt="">
+                <p>O passageiro sentado dentro do Ônibus está em movimento em relação á pessoa situada no ponto e em repouso em relação ao motorista</p>
+            </div>
+        </div>
+        <h2>Velocidade escalar média e velocidade escalar instantânea</h2>
+        <p>Considere um ônibus em movimento em relação ao solo, percorrendo 180 km em 3 h. A distância percorrida (180 km) dividida pelo intervalo de tempo (3 h) caracteriza a velocidade escalar média Vm do ônibus: <br>
+
+        <p>Vm = 180 km/3 h = 60 km/h <br></p> 
+            
+        <p> A qualquer movimento associamos a grandeza chamada velocidade escalar para medir a variação do espaço do móvel no decorrer do tempo. Iniciaremos, portanto, nosso estudo analisando a <strong>velocidade escalar média.</strong></p>
+
+            <div id="formula"></div>
+            <script src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+            
+            <script>
+            const formula = "v_{\\text{média}} = \\frac{\\Delta s}{\\Delta t}" ;
+            const element = document.getElementById('formula');
+            katex.render(formula, element);
+            </script> <br>
+
+        <h2>Unidade de medida</h2>
+        <p>A unidade de velocidade escalar (média ou instantânea) é expressa em unidade de comprimento por unidade de tempo: km/h (quilômetros por hora), m/s (metros por segundo), são os mais comuns e mais pedidos em provas. Veja abaixo como fazer a transformação:
+        </p>
+
+        <div id="Unidadedemedida" style="font-size: 30px; text-align: center;"></div> <br> <br>
+
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+
+        <script>
+            const formula1 =  `
+        \\frac{_{km}}{h} 
+        \\overset{\\div 3.6}{\\longrightarrow} 
+        \\frac{_{m}}{s}
+        \\quad 
+        \\frac{_{m}}{s} 
+        \\overset{\\times 3.6}{\\longrightarrow} 
+        \\frac{_{km}}{h}`;
+            const element1 = document.getElementById('Unidadedemedida');
+            katex.render(formula1, element1);
+        </script>
+
+       
+
+        <h2>Movimento progressivo e retrógrado</h2>
+        <p> O movimento é chamado progressivo quando o móvel caminha a favor da orientação positiva da trajetória. Seus espaços crescem no decurso do tempo e sua velocidade escalar é positiva. O movimento é chamado retrógrado quando o móvel caminha contra a orientação positiva da trajetória. Seus espaços decrescem no decurso do tempo e sua velocidade escalar é negativa.
+        </p>
+        <div style="display: flex;">
+            <img src="imagemRetrogadro.png" alt="" style="margin-right: 6px;">
+            <img src="movimentoretrogrado.png" alt="">
+        </div> <br>
+
+        <div class="Exercicios">
+            <h2>Exercícios</h2>
+            <div class="exercicio 1">
+                <p>
+                    <strong>1.(UEPB)</strong> Um professor de Física, verificando em sala de aula que todos os seus alunos encontram-se sentados, passou a fazer algumas afirmações para que eles refletissem e recordassem alguns conceitos sobre movimento. <br>
+                        Das afirmações seguintes formuladas pelo professor, a única correta é: <br> a) Pedro (aluno da sala) está em repouso em relação
+                        aos demais colegas, mas todos nós estamos em
+                        movimento em relação à Terra. <br>
+                        b) Mesmo para mim (professor), que não paro de
+                        andar, seria possível achar um referencial em
+                        relação ao qual eu estivesse em repouso. <br>
+                        c) A velocidade dos alunos que eu consigo observar
+                        agora, sentados em seus lugares, é nula para
+                        qualquer observador humano. <br>
+                        d) Como não há repouso absoluto, nenhum de nós está em repouso, em relação a nenhum referencial. <br>
+                        
+                        e) O Sol está em repouso em relação a qualquer
+                        referencial.
+                </p>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                        Ver resposta
+                        </a>
+                    </p>
+                    
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            <strong>LETRA B</strong> <br> Alternativa (A) ERRADA: Pedro pode estar em repouso em relação aos colegas, mas dizer que “todos nós estamos em movimento em relação à Terra” não é sempre verdadeiro. Se o referencial for a sala de aula, os alunos estão em repouso. <br>
+                            Alternativa (B) CORRETA: Sempre é possível definir um referencial no qual um objeto está em repouso. Por exemplo, se alguém estiver em um carro em movimento e tomarmos o carro como referencial, a pessoa dentro dele estará em repouso. <br>
+                            Alternativa (C) ERRADA: A velocidade dos alunos não é necessariamente nula para qualquer observador. Um astronauta na Lua, por exemplo, veria os alunos se movendo junto com a rotação da Terra. <br>
+                            Alternativa (D) ERRADA: O repouso e o movimento dependem do referencial. Se tomarmos a sala de aula como referencial, os alunos estão em repouso. <br>
+                            Alternativa (E) ERRADA: O Sol não está em repouso em qualquer referencial, pois se move na galáxia. <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercicio 2">
+                <p>
+                    <strong>2.(UEM-PR)</strong> Um trem se move com velocidade hori-
+                    zontal constante. Dentro dele estão o observador A e um garoto, ambos parados em relação ao trem. Na estação, sobre a plataforma, está o observador B, parado em relação a ela. Quando o trem passa pela plataforma, o garoto joga uma bola verticalmente para cima. <br>
+                    Desprezando-se a resistência do ar, podemos afirmar que:<br>
+                    01) o observador A vê a bola se mover verticalmente para cima e cair nas mãos do garoto.<br>
+                    02) o observador B vê a bola descrever uma parábola e cair nas mãos do garoto. <br>
+                    04) os dois observadores veem a bola se mover numa mesma trajetória. <br>
+                    08) o observador B vê a bola se mover verticalmente para cima e cair atrás do garoto. <br>
+                    16) o observador A vê a bola descrever uma parábola e cair atrás do garoto. <br>
+                    Dê como resposta a soma dos números associados às proposições corretas.
+                </p>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                        Ver resposta
+                        </a>
+                    </p>
+                    
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            <strong>03</strong> <br>
+                            01)<strong>Correto!</strong>  O observador A vê a bola se mover verticalmente para cima e cair nas mãos do garoto.Como o garoto e o observador A estão em repouso em relação ao trem, ambos veem a bola subindo e descendo verticalmente. <br>
+                            02) <strong>Correto! </strong> O observador B vê a bola descrever uma parábola e cair nas mãos do garoto. Como o trem está em movimento e a bola já possui a velocidade horizontal do trem, o observador B (na estação) vê a bola seguir um movimento parabólico, acompanhando o deslocamento do trem. <br>
+                            04) <strong>Errado!</strong> Os dois observadores veem a bola se mover numa mesma trajetória.O observador A vê um movimento vertical, enquanto o observador B vê um movimento parabólico. <br>
+                            08) <strong>Errado!</strong> O observador B vê a bola se mover verticalmente para cima e cair atrás do garoto. Como a bola tem a mesma velocidade horizontal do trem, ela cai de volta nas mãos do garoto e não atrás dele. <br>
+                            16) <strong>Errado!</strong> O observador A vê a bola descrever uma parábola e cair atrás do garoto. O observador A vê um movimento vertical e a bola cai nas mãos do garoto, não atrás dele. <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercicio 3">
+                <p>
+                    <strong>3.(UEL-PR)</strong> Um automóvel mantém uma velocidade
+                    escalar constante de 72,0 km/h. Em 1 h 10 min ele percorre, em quilômetros, uma distância de:<br>
+                    A) 79,2<br>
+                    B) 80,0 <br>
+                    C) 82,4 <br>
+                    D) 84,0 <br>
+                    E) 90,0 <br>
+                </p>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                        Ver resposta
+                        </a>
+                    </p>
+                    
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                            <strong>Letra D) 84,0 km.</strong> <br>
+                            A velocidade do automóvel é 72,0 km/h, e o tempo de percurso é 1 h 10 min. Primeiro, convertamos o tempo para horas: <br>1h 10 min = 1+10/60 = 1+0,1667 = 1,1667h <br>Agora, usamos a fórmula da distancia: <br> Distancia = Velocidade×Tempo <br> 𝑑 = 72,0×1,1667 <br> d = 72,0×1,1667 <br> 𝑑 = 84,0 km <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercicio 4">
+                <p>
+                    <strong>4.(Olimpíada Paulista de Física)</strong> Beatriz parte de casa para a escola com uma velocidade escalar constante de 4,0 km/h. Sabendo-se que Beatriz e Helena moram à mesma distância da escola e que Helena
+                    saiu de casa quando Beatriz já havia percorrido dois terços do caminho, qual deve ser a velocidade escalar média de Helena para que possa chegar à escola no mesmo instante em que Beatriz?<br>
+                    A) 1,3 km/h<br>
+                    B) 2,0 km/h <br>
+                    C) 4,0 km/h <br>
+                    D) 6,0 km/h <br>
+                    E) 12,0 km/h <br>
+                </p>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+                        Ver resposta
+                        </a>
+                    </p>
+                    
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                            <strong>E) 12,0 km/h</strong> <br> tB = distância restante/velocidade <br> tB = (d/3)/4 = d/12 horas <br> Helena precisa percorrer a distância total d no mesmo tempo t_B = d/12.
+                            A velocidade média de Helena será: <br> vH = Distância total/ tempo disponível <br> vH = d/(d/12) = 12km/h
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"></script>
+                <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+                    onload="renderMathInElement(document.body);"></script>
+
+            <div class="exercicio 5">
+                <p>
+                    <strong>5.(Fuvest-SP)</strong> Um automóvel e um ônibus trafegam
+                    em uma estrada plana, mantendo velocidades constantes em torno de 100 km/h e 75 km/h,respectivamente. Os dois veículos passam lado a lado em um posto de pedágio. Quarenta minutos(\( \frac{2}{3} \text{ da hora} \)) depois, nessa mesma estrada, o motorista do ônibus vê o automóvel ultrapassá-lo. Ele supõe, então, que o automóvel deve ter realizado,nesse período,<br>
+                    A) 4 minutos<br>
+                    B) 7 minutos <br>
+                    C) 10 minutos <br>
+                    D) 15 minutos <br>
+                    E) 25 minutos <br>
+                </p>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+                        Ver resposta
+                        </a>
+                    </p>
+                    
+                    <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                            <strong>C)10 min</strong> <br>
+                        --> cálculo da distância percorrida pelo caminhão: <br>
+                        Xc = Vc * t <br>
+                        Xc = 75 * (2/3) <br>
+                        Xc= 50 km <br>
+                        --> cálculo do tempo em que o automóvel gasta para percorrer essa distância: <br>
+                        Xa = 100 t <br>
+                        Xa= 50 <br>
+                        t = 1/2 h <br>
+                        t= 30 min <br>
+                        Com esse resultado, podemos concluir que o carro ficou parado pelo tempo equivalente a: <br>
+                        40 - 30 = 10 min <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exercicio 6">
+                <p>
+                    <strong>6.(Enem-MEC)</strong> As cidades de Quito e Cingapura
+                    encontram-se próximas à linha do equador e em pontos diametralmente opostos no globo terrestre. Considerando o raio da Terra igual a 6.370 km, pode-se afirmar que um avião saindo de Quito, voando em média 800 km/h, descontando as paradas de escala, chega a Cingapura em aproximadamente:<br>
+                    A) 16 horas<br>
+                    B) 20 horas <br>
+                    C) 25 horas <br>
+                    D) 32 horas <br>
+                    E) 36 horas <br>
+                </p>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+                        Ver resposta
+                        </a>
+                    </p>
+                    
+                    <div class="collapse" id="collapseExample6">
+                        <div class="card card-body">
+                            resposta
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</main>
+    <aside>
+        <p><a href="">Flash-cards</a> para memorização de fórmulas para os exercícios.</p>
+        <div class="scene scene--card" style=" width: 260px; height: 200px; margin: 40px 0; perspective: 600px;">
+            <div class="card" style="position: relative; width: 100%; height: 100%; cursor: pointer; transform-style: preserve-3d; transition: transform 1s;">
+                <div class="card__face card__face--front" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 30px; backface-visibility: hidden; background: rgb(27, 27, 114);">
+                    <p style="margin-top: -30px;">Velocidade  Média</p>
+                </div>
+                <div class="card__face card__face--back" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 30px; backface-visibility: hidden; background: rgb(27, 27, 114); transform: rotateY(180deg);">
+                    <p style="margin-top: -30px;">\( v_m = \frac{\Delta s}{\Delta t} \)
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scene scene--card" style="display: inline-block; width: 260px; height: 200px; margin: 40px 0; perspective: 600px;">
+            <div class="card" style="position: relative; width: 100%; height: 100%; cursor: pointer; transform-style: preserve-3d; transition: transform 1s;">
+                <div class="card__face card__face--front" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 29px; backface-visibility: hidden; background: rgb(27, 27, 114);">
+                    <p style="margin-top: -30px;">Unidade de medida </p>
+                </div>
+                <div class="card__face card__face--back" style="position: absolute; width: 100%; height: 100%; line-height: 260px; color: white; text-align: center; font-weight: bold; font-size: 20px; backface-visibility: hidden; background: rgb(27, 27, 114); transform: rotateY(180deg);">
+                <p style="margin-top: -30px;">\( \frac{\text{km}}{\text{h}} \overset{\div 3.6}{\longrightarrow} \frac{\text{m}}{\text{s}} \quad \frac{\text{m}}{\text{s}} \overset{\times 3.6}{\longrightarrow} \frac{\text{km}}{\text{h}} \)
+                </p>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<script>
+    // Script para alternar a classe 'is-flipped' nos cartões
+    var cards = document.querySelectorAll('.card');
+
+    [...cards].forEach((card) => {
+        card.addEventListener('click', function() {
+            // Adiciona e remove a rotação do cartão
+            card.style.transform = card.style.transform === 'rotateY(180deg)' ? '' : 'rotateY(180deg)';
+        });
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
